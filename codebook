@@ -1,1 +1,124 @@
-#test
+Data Dictionary / Code Book
+=================
+
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+Additional vectors obtained by averaging the signals in a signal window sample (angle data) were separate calculations and thus excluded from this data set.
+
+For each of the mean and standard deviation variables used, data were aggregated by activity and subject and mean value calculated for each grouping.  For each record the following are returned:
+
+- An identifier of the subject who carried out the experiment.
+- Activity ID and descriptive label
+- A 79-feature vector with the mean value of each of the time and frequency domain variables where mean or standard deviation were expressed (see above). A “_mean” descriptor was added to each variable to indicate.
+
+The complete list of variables of each feature vector is:
+tBodyAcc.std...Y _mean
+tGravityAcc.std...X _mean
+tGravityAcc.std...Z _mean
+tBodyAcc.std...X _mean
+tBodyAcc.std...Z _mean
+tGravityAcc.std...Y _mean
+tBodyAccJerk.std...X _mean
+tBodyAccJerk.std...Y _mean
+tBodyGyro.std...X _mean
+tBodyGyro.std...Z _mean
+tBodyGyroJerk.std...Y _mean
+tBodyAccMag.std.. _mean
+tBodyAccJerkMag.std.. _mean
+tBodyGyroJerkMag.std.. _mean
+fBodyAcc.std...Y _mean
+fBodyAccJerk.std...X _mean
+fBodyAccJerk.std...Z _mean
+fBodyGyro.std...Y _mean
+fBodyAccMag.std.. _mean
+fBodyBodyGyroMag.std.. _mean
+tBodyAcc.mean...X _mean
+tBodyAcc.mean...Z _mean
+tGravityAcc.mean...Y _mean
+tBodyAccJerk.mean...X _mean
+tBodyAccJerk.mean...Z _mean
+tBodyGyro.mean...Y _mean
+tBodyGyroJerk.mean...X _mean
+tBodyGyroJerk.mean...Z _mean
+tGravityAccMag.mean.. _mean
+tBodyGyroMag.mean.. _mean
+fBodyAcc.mean...X _mean
+fBodyAcc.mean...Z _mean
+fBodyAcc.meanFreq...Y _mean
+fBodyAccJerk.mean...X _mean
+fBodyAccJerk.mean...Z _mean
+fBodyAccJerk.meanFreq...Y _mean
+fBodyGyro.mean...X _mean
+fBodyGyro.mean...Z _mean
+fBodyGyro.meanFreq...Y _mean
+fBodyAccMag.mean.. _mean
+fBodyBodyAccJerkMag.mean.. _mean
+fBodyBodyGyroMag.mean.. _mean
+fBodyBodyGyroJerkMag.mean.. _mean
+tBodyAccJerk.std...Z _mean
+tBodyGyro.std...Y _mean
+tBodyGyroJerk.std...X _mean
+tBodyGyroJerk.std...Z _mean
+tGravityAccMag.std.. _mean
+tBodyGyroMag.std.. _mean
+fBodyAcc.std...X _mean
+fBodyAcc.std...Z _mean
+fBodyAccJerk.std...Y _mean
+fBodyGyro.std...X _mean
+fBodyGyro.std...Z _mean
+fBodyBodyAccJerkMag.std.. _mean
+fBodyBodyGyroJerkMag.std.. _mean
+tBodyAcc.mean...Y _mean
+tGravityAcc.mean...X _mean
+tGravityAcc.mean...Z _mean
+tBodyAccJerk.mean...Y _mean
+tBodyGyro.mean...X _mean
+tBodyGyro.mean...Z _mean
+tBodyGyroJerk.mean...Y _mean
+tBodyAccMag.mean.. _mean
+tBodyAccJerkMag.mean.. _mean
+tBodyGyroJerkMag.mean.. _mean
+fBodyAcc.mean...Y _mean
+fBodyAcc.meanFreq...X _mean
+fBodyAcc.meanFreq...Z _mean
+fBodyAccJerk.mean...Y _mean
+fBodyAccJerk.meanFreq...X _mean
+fBodyAccJerk.meanFreq...Z _mean
+fBodyGyro.mean...Y _mean
+fBodyGyro.meanFreq...X _mean
+fBodyGyro.meanFreq...Z _mean
+fBodyAccMag.meanFreq.. _mean
+fBodyBodyAccJerkMag.meanFreq.. _mean
+fBodyBodyGyroMag.meanFreq.. _mean
+fBodyBodyGyroJerkMag.meanFreq.. _mean
